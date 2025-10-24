@@ -1,0 +1,132 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("https://t3.ftcdn.net/jpg/08/51/59/76/360_F_851597678_hYsJgzXHYMHGBJkRJCkvpIBGUBW4y8Ks.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== OVERLAY ===== */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffdf00;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+/* ===== SUBSCRIBERS ===== */
+.subscribers {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #f1f1f1;
+}
+
+/* ===== TIPS ===== */
+.tips {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+
+/* ===== TIMER ===== */
+.timer-box {
+  margin: 25px 0;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.timer-text {
+  font-size: 0.9rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#timer {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+/* ===== BUTTON ===== */
+.join-btn {
+  background: linear-gradient(135deg, #ffcc00, #ff7b00);
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.join-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
+}
+
+/* ===== FADE ANIMATION ===== */
+.fade {
+  animation: fadeInOut 2.5s infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* ===== DISCLAIMER ===== */
+.disclaimer {
+  font-size: 0.2rem;
+  color: #ccc;
+  margin-top: 25px;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  #timer {
+    font-size: 2rem;
+  }
+
+  .join-btn {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
